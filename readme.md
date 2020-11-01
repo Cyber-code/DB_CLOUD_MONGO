@@ -15,6 +15,6 @@ Récupere toutes les 10 secondes les données de Lille et Paris
 Interface web pour visioner les statios autour de 500 mètres.
 
 lancer la commande :
-    export FLASK_APP=exo3.py
-    export FLASK_ENV=development
+    export FLASK_APP=exo3.py;
+    export FLASK_ENV=development;
     flask run
