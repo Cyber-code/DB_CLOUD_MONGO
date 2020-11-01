@@ -2,7 +2,6 @@
 
 Réalisé par Clément Sanchez et Nicolas Schmitt
 
-
 ## Exo1
 
 Contient les fonctions de base pour récupérer des valeurs de Lille, Paris, Lyon et Rennes
