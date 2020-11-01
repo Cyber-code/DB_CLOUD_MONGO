@@ -24,7 +24,7 @@ def index():
 def search():
     lat = float(request.values.get('lat'))
     lon = float(request.values.get('lon'))
-    max_dist = request.values.get('maxdist',500)
+    max_dist = float(request.values.get('maxdist',500.0))
 
     recherche = {'geometry': {'$near': {'$geometry': {'type': "Point", 'coordinates': [lon, lat]}, '$minDistance': 0, '$maxDistance': max_dist}}}
     results = stations.find(recherche)
@@ -36,10 +36,8 @@ def search():
             if data.count() > 0:
                 data = data.next()
                 html_result+= res['name'] + ' [nb vélos dispo : ' + str(data['bike_available']) + '] / [nb places libres : ' + str(data['stand_available']) + '] <br/>'
-            #else:
-            #    html_result += res['name'] + '<br/>'
     else:
-        html_result = 'Aucune station n\'est disponible dans un rayon de 500m'
+        html_result = f'Aucune station n\'est disponible dans un rayon de {max_dist} m' 
     
     return html_result
 
