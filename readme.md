@@ -2,6 +2,10 @@
 
 Réalisé par Clément Sanchez et Nicolas Schmitt
 
+## Installation
+
+pip install -r requirements.txt
+
 ## Exo1
 
 Contient les fonctions de base pour récupérer des valeurs de Lille, Paris, Lyon et Rennes
@@ -14,16 +18,16 @@ Récupere toutes les 10 secondes les données de Lille et Paris
 
 Interface web pour visioner les stations autour de 500 mètres.
 
-lancer la commande :
+Lancer la commande :
     export FLASK_APP=exo3.py;
     export FLASK_ENV=development;
     flask run
 
-## Exo4s
+## Exo4
 
 Interface web pour la gestion / recherche des stations.
 
-lancer la commande :
+Lancer la commande :
     export FLASK_APP=exo4.py;
     export FLASK_ENV=development;
     flask run
