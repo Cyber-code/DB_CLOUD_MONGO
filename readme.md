@@ -21,7 +21,7 @@ lancer la commande :
 
 ## Exo4s
 
-Interface web pour la gestion / recherche des stations
+Interface web pour la gestion / recherche des stations.
 
 lancer la commande :
     export FLASK_APP=exo4.py;
