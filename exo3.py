@@ -4,7 +4,6 @@ from exo1 import get_vdata, ville_url, db
 
 import datetime
 
-import os
 
 app = Flask(__name__)
 app.secret_key = 'secretKey'
